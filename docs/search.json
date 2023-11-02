@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Team member 1: One sentence description of Team member 1 (e.g., year, major, etc.).\nTeam member 2: One sentence description of Team member 2 (e.g., year, major, etc.).\nTeam member 3: One sentence description of Team member 3 (e.g., year, major, etc.).\nTeam member 4: One sentence description of Team member 4 (e.g., year, major, etc.).\n…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "TEAM NAME",
+    "section": "",
+    "text": "Add project abstract here."
+  },
+  {
+    "objectID": "proposal.html",
+    "href": "proposal.html",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "",
+    "text": "library(tidyverse)"
+  },
+  {
+    "objectID": "proposal.html#introduction-and-data",
+    "href": "proposal.html#introduction-and-data",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "Introduction and data",
+    "text": "Introduction and data\nI am choosing to work with data from a Project Vox (https://projectvox.library.duke.edu/) Summer Story+ project that I managed last summer 2022. Two DKU students Karen Nielsen and Junyi Tao curated the data of correspondence between the philosopher Princess Elisabeth and her contemporaries. They relied on the book “The Correspondence between Princess Elisabeth of Bohemia and René Descartes” edited and translated by Lisa Shapiro. The observations track individual correspondence between Princess Elizabeth and Descartes, as well as other philosophers like Robert Barclay. The goal for the summer was to create a data visualization, but in the end, we only had time to collect and curate the data."
+  },
+  {
+    "objectID": "proposal.html#research-question",
+    "href": "proposal.html#research-question",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "Research question",
+    "text": "Research question\nQuestion: What is the geographic landscape of Princess Elisabeth’s philosophy correspondence and who did she frequently correspond with?\nDescription of research project: Women philosophers of the modern era corresponded with the male contemporaries as well as each other. While there were significantly fewer women philosophers than men, there were many important ones who have been marginalized by history. Resurfacing their voices and important work is the mission of Project Vox. This research project uses the data collected by Project Vox researchers to visualize this mission by showing a network of correspondence by philosopher Princess Elisabeth. I hypothesize that Princess Elizabeth corresponded across Europe (London, The Hague, Paris) with many philosophers, particularly Rene Descartes, during her intellectual period.\nTypes of variables: categorical (names, location) and quantitative (year, geo-location). Converting location to coordinates in the data may take some work."
+  },
+  {
+    "objectID": "proposal.html#literature",
+    "href": "proposal.html#literature",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "Literature",
+    "text": "Literature\n\nFind one published credible article on the topic you are interested in researching.\nProject Vox research: https://projectvox.library.duke.edu/\nMaster’s thesis on the Project Vox user exerience and digital humanities landscape: https://cdr.lib.unc.edu/concern/masters_papers/2514nq56j\nAlso uploaded are references to the data methodology.\nProvide a one paragraph summary about the article.\nIn 1-2 sentences, explain how your research question builds on / is different than the article you have cited."
+  },
+  {
+    "objectID": "proposal.html#glimpse-of-data",
+    "href": "proposal.html#glimpse-of-data",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "Glimpse of data",
+    "text": "Glimpse of data\n\nvox = read.csv(file = \"~/summer-project-TeamKelsey/data/pv_correspondence_cleaned_index.csv\") \nglimpse(vox)\n\nRows: 188\nColumns: 12\n$ connection_type      <chr> \"correspondence\", \"correspondence\", \"corresponden…\n$ correspondent        <chr> \"Barclay, Robert\", \"Barclay, Robert\", \"Barclay, R…\n$ date                 <chr> \"04/24/1676\", \"07/21/1676; 07/31/1676\", \"09/06/16…\n$ reformatted_date     <chr> \"24 April, 1676\", \"21/31 July, 1676\", \"Sep. 6, 16…\n$ from                 <chr> \"Barclay, Robert\", \"Princess Elisabeth\", \"Barclay…\n$ to                   <chr> \"Princess Elisabeth\", \"Barclay, Robert\", \"Princes…\n$ location             <chr> \"London\", \"Herford\", \"Edinburgh\", \"\", \"Ury\", \"\", …\n$ full_text            <chr> \"Y\", \"Y\", \"Y\", \"Y\", \"Y\", \"Y\", \"Y\", \"Y\", \"Y\", \"Y e…\n$ source               <chr> \"Shapiro 186-8\", \"Webb 327-8; Hodgkin 256-7; Shap…\n$ index_topic_shapiro  <chr> \"\", \"Aberdeen Prison; \", \"Aberdeen Prison; \", \"Ab…\n$ index_person_shapiro <chr> \"Barclay, David;\", \"Barclay, David; Furly, Benjam…\n$ index_shapiro_texts  <chr> \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"…\n\n\nQs for you:\nLooking for your professional opinion on how to make this data interesting. I’m thinking of a geographic visualization of this correspondence. Where you would see lines to and from places where letters were written, and one could click on a data point to see more information about the letter. I will likely need a geocoordinates data set or manually put in the information for location. In terms of interacting with a geographic correspondence map, should I use Shiny? I’m also thinking of sustainable workflows and being able to teach undergraduates to reproduce this workflow with other philosophers. So Duke resources only would be great. Thank you for your input!"
+  },
+  {
+    "objectID": "proposal.html#introduction-and-data-1",
+    "href": "proposal.html#introduction-and-data-1",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "Introduction and data",
+    "text": "Introduction and data\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations."
+  },
+  {
+    "objectID": "proposal.html#research-question-1",
+    "href": "proposal.html#research-question-1",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "Research question",
+    "text": "Research question\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?"
+  },
+  {
+    "objectID": "proposal.html#literature-1",
+    "href": "proposal.html#literature-1",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "Literature",
+    "text": "Literature\n\nFind one published credible article on the topic you are interested in researching.\nProvide a one paragraph summary about the article.\nIn 1-2 sentences, explain how your research question builds on / is different than the article you have cited."
+  },
+  {
+    "objectID": "proposal.html#glimpse-of-data-1",
+    "href": "proposal.html#glimpse-of-data-1",
+    "title": "Princess Elisabeth Philosophy Correspondence",
+    "section": "Glimpse of data",
+    "text": "Glimpse of data\n\n# add code here"
+  },
+  {
+    "objectID": "proposal.html#introduction-and-data-2",
+    "href": "proposal.html#introduction-and-data-2",
+    "title": "Project title",
+    "section": "Introduction and data",
+    "text": "Introduction and data\n\nIdentify the source of the data.\nState when and how it was originally collected (by the original data curator, not necessarily how you found the data).\nWrite a brief description of the observations."
+  },
+  {
+    "objectID": "proposal.html#research-question-2",
+    "href": "proposal.html#research-question-2",
+    "title": "Project title",
+    "section": "Research question",
+    "text": "Research question\n\nA well formulated research question. (You may include more than one research question if you want to receive feedback on different ideas for your project. However, one per data set is required.)\nA description of the research topic along with a concise statement of your hypotheses on this topic.\nIdentify the types of variables in your research question. Categorical? Quantitative?"
+  },
+  {
+    "objectID": "proposal.html#literature-2",
+    "href": "proposal.html#literature-2",
+    "title": "Project title",
+    "section": "Literature",
+    "text": "Literature\n\nFind one published credible article on the topic you are interested in researching.\nProvide a one paragraph summary about the article.\nIn 1-2 sentences, explain how your research question builds on / is different than the article you have cited."
+  },
+  {
+    "objectID": "proposal.html#glimpse-of-data-2",
+    "href": "proposal.html#glimpse-of-data-2",
+    "title": "Project title",
+    "section": "Glimpse of data",
+    "text": "Glimpse of data\n\n# add code here"
+  },
+  {
+    "objectID": "report.html",
+    "href": "report.html",
+    "title": "Project title",
+    "section": "",
+    "text": "Add project writeup here."
+  }
+]
