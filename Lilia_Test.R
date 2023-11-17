@@ -17,11 +17,9 @@ barplot(table(correspondence$correspondent), main="Correspondent Frequencies", x
 # width and height
 pie(table(correspondence$correspondent), main="Pie Chart of 'correspondent'", col=rainbow(length(unique(correspondence$correspondent))))
 
-
 correspondent_freq <- table(correspondence$correspondent)
 pie(correspondent_freq, main="Pie Chart of 'correspondent'", col=rainbow(length(unique(correspondence$correspondent))), cex = 0.8)
 legend("topright", legend = paste(names(correspondent_freq), "\n", scales::percent(correspondent_freq / sum(correspondent_freq))), cex = 0.8, fill = rainbow(length(unique(correspondence$correspondent))))
-
 
 correspondent_freq <- table(correspondence$correspondent)
 pie3D(correspondent_freq, main="3D Pie Chart of 'correspondent'", col=rainbow(length(unique(correspondence$correspondent))), labels = paste(names(correspondent_freq), "\n", scales::percent(correspondent_freq / sum(correspondent_freq))), explode = 0.1)
